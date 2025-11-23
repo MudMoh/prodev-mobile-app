@@ -9,7 +9,7 @@ import {
   ScrollView,
   TouchableHighlight,
 } from "react-native";
-import { FILTERS, SAMPLE_DATA } from "@/constants/data";
+import { FILTERS, SAMPLE_DATA } from "../../constants/data";
 
 const Home = () => {
   return (
@@ -37,13 +37,13 @@ const Home = () => {
       >
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
           <View style={styles.filterGroup}>
-            {FILTERS.map((filter, index) => (
+            {FILTERS.map((filter: string, index: number) => (
               <View style={styles.filterContainer} key={index}>
                 <Image
                   style={{
                     flex: 1,
                   }}
-                  source={require("@/assets/images/mansion.png")}
+                  source={require("../../assets/images/sample-image.png")}
                   resizeMode="contain"
                 />
                 <Text>{filter}</Text>

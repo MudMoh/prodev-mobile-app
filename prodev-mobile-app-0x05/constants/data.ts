@@ -1,4 +1,4 @@
-import { PropertyListingProps } from "@/interfaces";
+import { PropertyListingProps } from "../interfaces";
 
 const SAMPLE_DATA: PropertyListingProps[] = [
   {

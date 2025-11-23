@@ -1,9 +1,9 @@
 import { View, Text } from "react-native";
 import PropertyListingCard from "./common/PropertyListingCard";
 import { useState } from "react";
-import { PropertListing, PropertyListingProps } from "../interfaces";
+import { PropertyListProps, PropertyListingProps } from "../interfaces";
 
-const PropertyListing = ({ listings }: PropertListing) => {
+const PropertyListing = ({ listings }: PropertyListProps) => {
   return (
     <View
       style={{
@@ -11,7 +11,7 @@ const PropertyListing = ({ listings }: PropertListing) => {
         rowGap: 10,
       }}
     >
-      {listings?.map((listing, key) => (
+      {listings?.map((listing: PropertyListingProps, key: number) => (
         <PropertyListingCard {...listing} key={key} />
       ))}
     </View>
