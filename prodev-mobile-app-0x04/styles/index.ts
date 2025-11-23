@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { styles as joinStyles } from './_joinstyle';
+import { styles as joinStyles } from './_join';
 import { styles as mainStyles } from './_mainstyle';
 
 const fallback = StyleSheet.create({
